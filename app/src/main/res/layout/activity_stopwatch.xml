@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".StopwatchActivity"
+    android:background="#81F7F3"
+    >
+
+    <!--We’ll use this text view to display the number of seconds-->
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="56sp"
+        />
+    <!--textAppearance AND textSize  attributes make the stopwatch timer nice and big.-->
+
+    <!--This code is for the Start button-->
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="184dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF33EC"
+        android:onClick="onClickStart"
+        android:text="@string/start"
+        android:textColor="#39FF33" />
+    <!--When it gets clicked, the Start button calls the onClickStart() method-->
+
+    <!--This is for the Stop button-->
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickStop"
+        android:text="@string/stop"
+        android:backgroundTint="#F9FF33"
+        android:textColor="#FF33EC" />
+    <!--When it gets clicked, the Stop button calls the onClickStop() method.-->
+
+    <!--This is for the Reset button-->
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickReset"
+        android:text="@string/reset"
+        android:backgroundTint="#39FF33"
+        android:textColor="#F9FF33"
+        android:layout_marginBottom="20dp"/>
+    <!--When it gets clicked, the Reset button calls the onClickReset() method-->
+
+    <TextView
+        android:id="@+id/time_view_cycle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/time_view_cycle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/time_view_cycle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/time_view_cycle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/time_view_cycle5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="25sp"
+        />
+
+
+</LinearLayout>

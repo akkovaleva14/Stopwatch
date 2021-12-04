@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stopwatch</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name = "cycle"> КРУГ №%1$d  %2$d:%3$02d:%4$02d</string>
+</resources>
